@@ -5,8 +5,8 @@ Start the Application:
 - If you're using an emulator (Android Studio Emulator, iOS Simulator), make sure it is running.
 - Open your terminal or command prompt on your computer and navigate to the project folder.
 - Run the following command to start the app:
-  
   flutter run
+
   
 - The app should now build and launch on your connected device or emulator.
 Splash Screen:
