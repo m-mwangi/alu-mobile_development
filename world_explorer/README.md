@@ -5,13 +5,12 @@ Start the Application:
 - If you're using an emulator (Android Studio Emulator, iOS Simulator), make sure it is running.
 - Open your terminal or command prompt on your computer and navigate to the project folder.
 - Run the following command to start the app:
-  flutter run
 
+         flutter run
   
 - The app should now build and launch on your connected device or emulator.
-Splash Screen:
 
-## 2. Search for a Country
+## 1. Search for a Country
 Home Screen:
 - The Home Screen of the app has a search bar at the top where you can look up countries.
 - To search for a country, tap the search bar and start typing the name of the country you're interested in. The app will immediately begin searching as you type.
@@ -20,7 +19,7 @@ Home Screen:
 The flag of the country.
 The region (e.g., Asia, Europe, Africa) the country belongs to.
 
-## 3. View Country Details
+## 2. View Country Details
 Country Details Screen:
 - After entering a country name and seeing the results, tap on any country from the list to view more details about that country.
 - The app will take you to the Country Details Screen, where you'll find detailed information such as:
@@ -30,7 +29,7 @@ Country Details Screen:
 - The flag of the country, displayed prominently at the top of the screen.
 - There will also be a "View Neighbors" button if the country has any neighboring countries.
   
-## 4. Explore Neighboring Countries
+## 3. Explore Neighboring Countries
 Neighbors Screen:
 - If the selected country shares borders with other countries, you'll see a "View Neighbors" button.
 - Tap the button to see a list of the neighboring countries.
@@ -39,7 +38,7 @@ Neighbors Screen:
      - The capital of the neighboring country.
 - If there are no neighboring countries, the app will show a message "No neighbors found."
   
-## 5. Navigation Between Screens
+## 4. Navigation Between Screens
 - Home Screen → Country Details Screen:
      After searching for a country, tap on the result you want, and the app will take you to the Country Details Screen.
 - Country Details Screen → Neighbors Screen:
@@ -47,6 +46,6 @@ Neighbors Screen:
 - Back to Home Screen:
      You can use the back arrow (usually located at the top left of the screen) to go back to the Home Screen from any other screen.
 
-## 6. Additional Features
+## 5. Additional Features
 - Error Handling: If there’s an issue with the search or fetching data, an error message will appear informing you of the problem (e.g., "Error loading country details").
 - Loading Indicator: While data is being fetched (e.g., when you search for a country), you’ll see a loading spinner until the information is ready.
