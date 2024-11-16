@@ -15,9 +15,9 @@ class CountryDetailsScreen extends StatelessWidget {
           country.name,
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
-        backgroundColor: Colors.teal, // Match the AppBar color with NeighborsScreen
+        backgroundColor: Colors.teal,
       ),
-      backgroundColor: Colors.teal[50], // Set a light background color
+      backgroundColor: Colors.teal[50],
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
