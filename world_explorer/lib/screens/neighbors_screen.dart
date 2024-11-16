@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../services/api_service.dart'; // Make sure this service is correctly implemented
-import '../models/country.dart'; // Ensure this model is correctly defined
+import '../services/api_service.dart';
+import '../models/country.dart';
 
 class NeighborsScreen extends StatelessWidget {
   final List<String> borderCountries;
@@ -14,7 +14,7 @@ class NeighborsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Neighboring Countries', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
-        backgroundColor: Colors.teal, // Change the AppBar color
+        backgroundColor: Colors.teal,
       ),
       body: FutureBuilder<List<Country>>(
         future: _apiService.fetchNeighbors(borderCountries),
