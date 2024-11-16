@@ -44,21 +44,20 @@ class _HomeScreenState extends State<HomeScreen> {
             color: Colors.white,
           ),
         ),
-        backgroundColor: Colors.teal, // Match the AppBar color with other screens
+        backgroundColor: Colors.teal,
       ),
       body: Container(
         decoration: BoxDecoration(
-          color: Colors.teal[50], // Light background color to match other screens
+          color: Colors.teal[50],
         ),
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Enlarged search input field with bold hint text
             TextField(
               controller: _controller,
               style: TextStyle(
-                color: Colors.black, // Changed to black for better contrast
+                color: Colors.black,
                 fontSize: 18,
               ),
               decoration: InputDecoration(
@@ -69,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   fontWeight: FontWeight.bold,
                 ),
                 border: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.teal), // Teal border
+                  borderSide: BorderSide(color: Colors.teal),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
@@ -84,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
             // Country List
             _isLoading
                 ? Center(
-                    child: CircularProgressIndicator(), // Corrected typo here
+                    child: CircularProgressIndicator(),
                   )
                 : Expanded(
                     child: ListView.builder(
@@ -93,7 +92,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         final country = _countries[index];
                         return Card(
                           margin: EdgeInsets.symmetric(vertical: 8),
-                          color: Colors.white, // White card color for consistency
+                          color: Colors.white,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15),
                           ),
@@ -106,7 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             title: Text(
                               country.name,
                               style: TextStyle(
-                                color: Colors.teal, // Teal color for the title
+                                color: Colors.teal,
                                 fontSize: 22,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -114,7 +113,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             subtitle: Text(
                               country.region,
                               style: TextStyle(
-                                color: Colors.black54, // Darker subtitle color
+                                color: Colors.black54,
                                 fontSize: 18,
                               ),
                             ),
